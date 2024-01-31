@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "module": "esnext",
+    "target": "es6",
+    "declaration": true,
+    "lib": ["ESNext"],
+    "sourceMap": true,
+    "types": ["node", "jest"],
+    "outDir": "dist/cjs",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "emitDeclarationOnly": true,
+    "typeRoots": ["node_modules/@types"]
+  },
+  "exclude": ["examples", "node_modules", "**/dist/**", "./__tests__/**/*"]
+}

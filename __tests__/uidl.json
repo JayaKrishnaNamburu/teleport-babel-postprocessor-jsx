@@ -1,0 +1,39 @@
+{
+  "name": "Simple Component",
+  "propDefinitions": {
+    "heading": {
+      "type": "string",
+      "defaultValue": "Hello"
+    }
+  },
+  "node": {
+    "type": "element",
+    "content": {
+      "elementType": "container",
+      "children": [
+        {
+          "type": "element",
+          "content": {
+            "elementType": "text",
+            "style": {
+              "width": "100%"
+            },
+            "children": [
+              {
+                "type": "dynamic",
+                "content": {
+                  "referenceType": "prop",
+                  "id": "heading"
+                }
+              },
+              {
+                "type": "static",
+                "content": "World!"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
